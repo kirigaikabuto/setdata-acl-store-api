@@ -171,6 +171,7 @@ func run(c *cli.Context) error {
 	srv.Endpoint("user_role.get", userRoleAmqpEndpoints.MakeGetUserRoleAmqpEndpoint())
 	srv.Endpoint("user_role.delete", userRoleAmqpEndpoints.MakeDeleteUserRoleAmqpEndpoint())
 	srv.Endpoint("user_role.list", userRoleAmqpEndpoints.MakeListUserRoleAmqpEndpoint())
+	srv.Endpoint("user_role.getUserPermissions", userRoleAmqpEndpoints.MakeGetUserRolePermissionsAmqpEndpoint())
 	err = srv.Start()
 	if err != nil {
 		return err
