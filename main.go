@@ -16,7 +16,6 @@ var (
 	version              = "0.0.0"
 	amqpHost             = ""
 	amqpPort             = 0
-	amqpLevel            = ""
 	postgresUser         = ""
 	postgresPassword     = ""
 	postgresDatabaseName = ""
@@ -41,7 +40,7 @@ func parseEnvFile() {
 	amqpPortStr := os.Getenv("RABBIT_PORT")
 	amqpPort, _ = strconv.Atoi(amqpPortStr)
 	if amqpPort == 0 {
-		amqpPort = 5432
+		amqpPort = 5672
 	}
 	if amqpHost == "" {
 		amqpHost = "localhost"
@@ -91,9 +90,14 @@ func main() {
 
 func run(c *cli.Context) error {
 	parseEnvFile()
+	fmt.Println(postgresHost)
+	fmt.Println(postgresUser)
+	fmt.Println(postgresDatabaseName)
+	fmt.Println(postgresPassword)
+	fmt.Println(postgresParams)
 	rabbitConfig := amqp.Config{
-		Host:     "localhost",
-		Port:     5672,
+		Host:     amqpHost,
+		Port:     amqpPort,
 		LogLevel: 5,
 	}
 	serverConfig := amqp.ServerConfig{
@@ -110,12 +114,13 @@ func run(c *cli.Context) error {
 		return err
 	}
 	config := setdata_acl.PostgresConfig{
-		Host:     postgresHost,
-		Port:     postgresPort,
-		User:     postgresUser,
-		Password: postgresPassword,
-		Database: postgresDatabaseName,
-		Params:   postgresParams,
+		Host:             postgresHost,
+		Port:             postgresPort,
+		User:             postgresUser,
+		Password:         postgresPassword,
+		Database:         postgresDatabaseName,
+		Params:           postgresParams,
+		ConnectionString: "",
 	}
 	//role
 	postgreRoleStore, err := setdata_acl.NewPostgresRoleStore(config)
