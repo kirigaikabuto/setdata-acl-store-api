@@ -165,7 +165,7 @@ func run(c *cli.Context) error {
 	if err != nil {
 		return err
 	}
-	userRoleService := setdata_acl.NewUserRoleService(postgreUserRoleStore)
+	userRoleService := setdata_acl.NewUserRoleService(postgreUserRoleStore, postgreRolePermissionStore, postgrePermissionStore)
 	userRoleAmqpEndpoints := setdata_acl.NewUserRoleAmqpEndpoints(setdata_common.NewCommandHandler(userRoleService))
 	srv.Endpoint("user_role.create", userRoleAmqpEndpoints.MakeCreateUserRoleAmqpEndpoint())
 	srv.Endpoint("user_role.get", userRoleAmqpEndpoints.MakeGetUserRoleAmqpEndpoint())
