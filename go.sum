@@ -7,6 +7,16 @@ github.com/kirigaikabuto/setdata-acl v0.0.0-20210731065537-12bfcc7252b6 h1:YrA6o
 github.com/kirigaikabuto/setdata-acl v0.0.0-20210731065537-12bfcc7252b6/go.mod h1:HnpBXQS0OyF2CKUEXXapmnA0tioAggbhJNsUeG7JLNw=
 github.com/kirigaikabuto/setdata-acl v0.0.0-20210731073202-df041047a195 h1:4g8AUVeAclppzk5F8g77lU+6ZqkDl5USJIp2M/aopCo=
 github.com/kirigaikabuto/setdata-acl v0.0.0-20210731073202-df041047a195/go.mod h1:0JYiLpjCzOWv6GN/GEyJhkD+ivgWAmLYFgb3qgbg4mc=
+github.com/kirigaikabuto/setdata-acl v0.0.0-20210731094951-4c03e11ee2fb h1:N4hvwZDUbgy6pTxQGqV3umFs3/BfqA5skd9O9+4ESXc=
+github.com/kirigaikabuto/setdata-acl v0.0.0-20210731094951-4c03e11ee2fb/go.mod h1:0JYiLpjCzOWv6GN/GEyJhkD+ivgWAmLYFgb3qgbg4mc=
+github.com/kirigaikabuto/setdata-acl v0.0.0-20210731113218-ad510bf9738d h1:jVKeswwNeWmyTKiY5YPIjSLJ3ogtQ0VMJOS6kzEfgCM=
+github.com/kirigaikabuto/setdata-acl v0.0.0-20210731113218-ad510bf9738d/go.mod h1:0JYiLpjCzOWv6GN/GEyJhkD+ivgWAmLYFgb3qgbg4mc=
+github.com/kirigaikabuto/setdata-acl v0.0.0-20210731113633-82fdfe682498 h1:B2v0H48y15H1DRItahTkOyy69kGqkI0Svfp7unhXmMQ=
+github.com/kirigaikabuto/setdata-acl v0.0.0-20210731113633-82fdfe682498/go.mod h1:0JYiLpjCzOWv6GN/GEyJhkD+ivgWAmLYFgb3qgbg4mc=
+github.com/kirigaikabuto/setdata-acl v0.0.0-20210731114142-6866e5c04645 h1:kCng27yBX36Jl83bCfwYQ/4Zd0/czbw9i4F1hB6+f88=
+github.com/kirigaikabuto/setdata-acl v0.0.0-20210731114142-6866e5c04645/go.mod h1:0JYiLpjCzOWv6GN/GEyJhkD+ivgWAmLYFgb3qgbg4mc=
+github.com/kirigaikabuto/setdata-acl v0.0.0-20210731124342-f991cf59c3ed h1:8w5rhKdpbcfT/gVHJ1VZ+K0jCSbfJgHnIgS/nbL4Ul8=
+github.com/kirigaikabuto/setdata-acl v0.0.0-20210731124342-f991cf59c3ed/go.mod h1:0JYiLpjCzOWv6GN/GEyJhkD+ivgWAmLYFgb3qgbg4mc=
 github.com/kirigaikabuto/setdata-common v1.0.1-0.20210731064419-35e1e27617d0 h1:Ydn+/uavkiqAFvw5k1g4+9TYmUqxOu9nTmBxUWvmU9o=
 github.com/kirigaikabuto/setdata-common v1.0.1-0.20210731064419-35e1e27617d0/go.mod h1:EcsbBKzPC1NGpm1iADkalbcxTuw7M8ChtXfC+SFBcOM=
 github.com/kirigaikabuto/setdata-common v1.0.1-0.20210731073120-f240c1ec93b0 h1:ew7ndAx/IDf+GmRLu0+livaslnRGqcg7yW6AHbbm4fA=
