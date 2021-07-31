@@ -28,6 +28,8 @@ github.com/kirigaikabuto/setdata-acl v0.0.0-20210731142143-78902d694248 h1:2Or/p
 github.com/kirigaikabuto/setdata-acl v0.0.0-20210731142143-78902d694248/go.mod h1:0JYiLpjCzOWv6GN/GEyJhkD+ivgWAmLYFgb3qgbg4mc=
 github.com/kirigaikabuto/setdata-acl v0.0.0-20210731175516-574843f31a17 h1:SKbL/0u8I1holq07OQMfjvo6fIPgFUsKrZDK9Sr/qQA=
 github.com/kirigaikabuto/setdata-acl v0.0.0-20210731175516-574843f31a17/go.mod h1:0JYiLpjCzOWv6GN/GEyJhkD+ivgWAmLYFgb3qgbg4mc=
+github.com/kirigaikabuto/setdata-acl v0.0.0-20210731181902-16e551a7ce67 h1:GE/E9qwf9K4c4A5Vw7MACQrDLG8iswcDVbAztdu/c30=
+github.com/kirigaikabuto/setdata-acl v0.0.0-20210731181902-16e551a7ce67/go.mod h1:0JYiLpjCzOWv6GN/GEyJhkD+ivgWAmLYFgb3qgbg4mc=
 github.com/kirigaikabuto/setdata-common v1.0.1-0.20210731064419-35e1e27617d0 h1:Ydn+/uavkiqAFvw5k1g4+9TYmUqxOu9nTmBxUWvmU9o=
 github.com/kirigaikabuto/setdata-common v1.0.1-0.20210731064419-35e1e27617d0/go.mod h1:EcsbBKzPC1NGpm1iADkalbcxTuw7M8ChtXfC+SFBcOM=
 github.com/kirigaikabuto/setdata-common v1.0.1-0.20210731073120-f240c1ec93b0 h1:ew7ndAx/IDf+GmRLu0+livaslnRGqcg7yW6AHbbm4fA=
