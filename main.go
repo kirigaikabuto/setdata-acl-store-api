@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/djumanoff/amqp"
 	setdata_acl "github.com/kirigaikabuto/setdata-acl"
 	setdata_common "github.com/kirigaikabuto/setdata-common"
@@ -70,8 +69,6 @@ func main() {
 	}
 	rolePermissionService := setdata_acl.NewRolePermissionService(
 		postgreRolePermissionStore,
-		postgreRoleStore,
-		postgrePermissionStore,
 	)
 	rolePermissionAmqpEndpoints := setdata_acl.NewRolePermissionAmqpEndpoints(setdata_common.NewCommandHandler(rolePermissionService))
 	srv.Endpoint("role_permission.create", rolePermissionAmqpEndpoints.MakeCreateRolePermissionAmqpEndpoint())
@@ -79,7 +76,18 @@ func main() {
 	srv.Endpoint("role_permission.get", rolePermissionAmqpEndpoints.MakeGetRolePermissionAmqpEndpoint())
 	srv.Endpoint("role_permission.delete", rolePermissionAmqpEndpoints.MakeDeleteRolePermissionAmqpEndpoint())
 
-	fmt.Println(postgreRolePermissionStore)
+	//user roles
+	postgreUserRoleStore, err := setdata_acl.NewPostgresUserRoleStore(config)
+	if err != nil {
+		panic(err)
+		return
+	}
+	userRoleService := setdata_acl.NewUserRoleService(postgreUserRoleStore)
+	userRoleAmqpEndpoints := setdata_acl.NewUserRoleAmqpEndpoints(setdata_common.NewCommandHandler(userRoleService))
+	srv.Endpoint("user_role.create", userRoleAmqpEndpoints.MakeCreateUserRoleAmqpEndpoint())
+	srv.Endpoint("user_role.get", userRoleAmqpEndpoints.MakeGetUserRoleAmqpEndpoint())
+	srv.Endpoint("user_role.delete", userRoleAmqpEndpoints.MakeDeleteUserRoleAmqpEndpoint())
+	srv.Endpoint("user_role.list", userRoleAmqpEndpoints.MakeListUserRoleAmqpEndpoint())
 	err = srv.Start()
 	if err != nil {
 		panic(err)
